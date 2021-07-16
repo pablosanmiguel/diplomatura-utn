@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    font-family   : 'Trebuchet MS';
+    font-family   : 'Barlow', sans-serif;
     font-size     : 32px;
     text-transform: uppercase;
 }
@@ -16,30 +16,57 @@ h1 span {
 
 h2 {
     color      : #009999;
-    font-family: 'Trebuchet MS';
+    font-family: 'Barlow', sans-serif;
+    font-style : italic;
     font-size  : 26px;
 }
 
 h2 span {
     color     : #D9D9D9;
+    font-style: normal;
     font-size : 22px;
-    font-style: italic;
+}
+
+.listas {
+    column-count: 2;
+    display     : inline-block;
+    margin      : 0 0 0 20px;
 }
 
 h3 {
-    color      : #D9D9D9;
-    font-family: 'Trebuchet MS';
+    margin     : 0;
+    color      : #009999;
+    font-family: 'Barlow', sans-serif;
     font-size  : 20px;
 }
 
-h4 {
+.perfil {
+    background-color: #009999;
+    border-radius   : 20px;
+    color           : #D9D9D9;
+    margin          : 20px;
+    padding         : 20px;
+    width           : 500px;
+}
+
+.perfil h3 {
+    color         : #252525;
+    text-transform: uppercase;
+}
+
+.contacto {
+    align-items: baseline;
     color      : #859F9F;
-    font-family: Arial;
-    font-size  : 16px;
+    display    : flex;
+}
+
+.contacto i {
+    margin-right: 10px;
 }
 
 ul {
-    list-style: none;
+    list-style : none;
+    line-height: 20px;
 }
 
 ul li::before {
@@ -53,6 +80,8 @@ ul li::before {
 
 ol {
     list-style   : none;
+    line-height  : 20px;
+    width        : fit-content;
     counter-reset: x;
 }
 
@@ -70,17 +99,20 @@ ol li::before {
 }
 
 li {
-    font-family: Tahoma;
+    font-family: 'Bai Jamjuree', Tahoma, sans-serif;
     font-size  : 16px;
     color      : #D9D9D9;
 }
 
+li span {
+    font-style: italic;
+}
+
 p {
-    font-family  : Tahoma;
-    font-size    : 16px;
-    color        : #D9D9D9;
-    margin-left  : 10px;
-    margin-bottom: 15px;
+    font-family: 'Bai Jamjuree', Tahoma, sans-serif;
+    font-size  : 16px;
+    color      : #D9D9D9;
+    margin     : 10px 0 0 0;
 }
 
 a {
