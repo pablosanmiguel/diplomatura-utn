@@ -1,0 +1,29 @@
+.contenedor {
+	border : black 3px solid;
+	display: inline-flex;
+	justify-content: space-between;
+	width  : 95%;
+}
+
+.item {
+	display        : flex;
+	justify-content: center;
+	align-items    : center;
+	width          : 100px;
+	height         : 100px;
+}
+
+.rojo {
+	background-color: red;
+	color           : white;
+}
+
+.azul {
+	background-color: blue;
+	color           : white;
+}
+
+.verde {
+	background-color: green;
+	color           : white;
+}
