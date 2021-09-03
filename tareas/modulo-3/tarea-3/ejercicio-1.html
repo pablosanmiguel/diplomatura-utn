@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <script>
+        var dist = 0;
+        var medio = "";
+        dist = prompt('Ingrese distancia a recorrer (en metros)');
+        if (dist >= 0 && dist <= 1000) {
+            medio = "a pie";
+        } else if (dist > 1000 && dist <= 10000) {
+            medio = "en bicicleta";
+        } else if (dist > 10000 && dist <= 30000) {
+            medio = "en colectivo";
+        } else if (dist > 30000 && dist <= 100000) {
+            medio = "en auto";
+        } else if (dist > 100000) {
+            medio = "en avión";
+        }
+        document.write("Lo más apropiado para recorrer esa distancia es hacerlo " + medio);
+    </script>
+</body>
+
+</html>

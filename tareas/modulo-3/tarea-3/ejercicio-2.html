@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <script>
+        var nums = [20, 12, 4, 80, 6, 15, 23, 56, 34, 7];
+        function calcularMayor(numeros) {
+            var mayor = 0;
+            for (x = 0; x < numeros.length; x++) {
+                if (numeros[x] > mayor) {
+                    mayor = numeros[x];
+                }
+            }
+            return mayor;
+        }
+        document.write("El mayor número es " + calcularMayor(nums));
+    </script>
+</body>
+
+</html>
