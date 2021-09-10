@@ -1,0 +1,26 @@
+#contenedor {
+    border : black 3px solid;
+    display: inline-flex;
+}
+
+.cuadrado {
+    height : 100px;
+    width  : 100px;
+    opacity: 1.0;
+}
+
+.cuadrado:hover {
+    opacity: 0.7;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}

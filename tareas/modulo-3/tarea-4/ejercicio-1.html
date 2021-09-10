@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="ejercicio-1.css">
+</head>
+
+<body class="pepe">
+    <div id="contenedor">
+        <div class="cuadrado rojo"></div>
+        <div class="cuadrado azul"></div>
+        <div class="cuadrado verde"></div>
+    </div>
+    <script>
+        //obtiene un array de elementos cuya clase contengan 'cuadrado' en su nombre
+        let cuadrados = document.getElementsByClassName('cuadrado');
+        console.log(`hay ${cuadrados.length} cuadrados`);
+        for (var i = 0; i < cuadrados.length; i++) {
+            cuadrados[i].addEventListener('click', function () {
+                const clases = this.className.split(" ");
+                console.log(clases[1]);
+                const style = getComputedStyle(this);
+                console.log(style.backgroundColor);
+                const fondo = document.getElementsByTagName('body')[0];
+                fondo.style.backgroundColor = style.backgroundColor;
+            });
+        };
+    </script>
+</body>
+
+</html>
