@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <div id="contenedor" style="display: inline-flex; flex-direction: column;">
+        <label for="parrafo">Danos tu opinión:</label>
+        <textarea name="opinion" id="parrafo" cols="30" rows="10" style="resize: none;"></textarea>
+        <p id="mensaje">El comentario contiene <span id="cantidad">0</span> caracteres</textarea></p>
+    </div>
+    <script>
+        let parrafo = document.getElementById('parrafo');
+        let cantidad = document.getElementById('cantidad');
+        parrafo.addEventListener('input', function (e) {
+            cantidad.textContent = e.target.value.length;
+        });
+    </script>
+</body>
+
+</html>
