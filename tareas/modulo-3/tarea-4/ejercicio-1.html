@@ -19,10 +19,14 @@
         //obtiene un array de elementos cuya clase contengan 'cuadrado' en su nombre
         let cuadrados = document.getElementsByClassName('cuadrado');
         console.log(`hay ${cuadrados.length} cuadrados`);
+        //usa el for para asignar un listener a cada cuadrado (div) contenido dentro del array
         for (var i = 0; i < cuadrados.length; i++) {
             cuadrados[i].addEventListener('click', function () {
+                //como cada clase tiene 2 nombres, usa split para almacenar cada nombre en un casillero diferente del array <clases>
                 const clases = this.className.split(" ");
                 console.log(clases[1]);
+                //este comando devuelve el estilo aplicado al elemento <this>
+                //a su vez, <this> representa el objeto sobre el cual se hizo 'click'
                 const style = getComputedStyle(this);
                 console.log(style.backgroundColor);
                 const fondo = document.getElementsByTagName('body')[0];
