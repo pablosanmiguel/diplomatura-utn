@@ -32,7 +32,7 @@ const Contact = (props) => {
     return (
         <section id="contact">
             <div class="section-title">
-                <h2>Contacto, información, presupuestos</h2>
+                <h2><i class="icon-contact"></i> / Contacto, información, presupuestos</h2>
                 <p>Por cualquier consulta o solicitud de presupuesto, contactate conmigo</p>
             </div>
             <div class="inner-title">

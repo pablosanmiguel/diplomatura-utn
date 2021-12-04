@@ -2,7 +2,7 @@ const Resume = () => {
     return (
         <section id="resume">
             <div class="section-title">
-                <h2>Resumen Desarrollador de Software</h2>
+                <h2><i class="icon-resume"></i> / Resumen Desarrollador de Software</h2>
                 <p>Experiencia, estudios y cursos.</p>
             </div>
             <div class="inner-title">

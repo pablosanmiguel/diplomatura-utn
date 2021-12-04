@@ -3,12 +3,14 @@ const About = () => {
     return (
         <section id="about">
             <div class="section-title">
-                <h2>Diseño de Sistemas y de Páginas Web</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nihil deleniti a, maiores rerum enim
-                    amet hic nobis odit, dignissimos delectus veritatis cupiditate iure necessitatibus voluptatum
-                    tempore porro? Odio, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorem
-                    voluptatem sed blanditiis eveniet quaerat accusantium maxime rerum eligendi quo cupiditate
-                    repudiandae aliquid sunt voluptatum nobis, placeat rem natus minima!</p>
+                <h2><i class="icon-about"></i> / Diseño de Sistemas y de Páginas Web</h2>
+                <p>Me llamo Pablo San Miguel y vivo en Rosario (Argentina). Durante mis más de 20 años de experiencia como desarrollador de software 
+                    he realizado tareas de programación, análisis de requerimientos, maquetación de formularios, diseño de bases de datos y todo tipo de 
+                    tareas relacionadas en la construcción de un sistema de computación de escritorio. En paralelo a la experiencia laboral también fui 
+                    manteniéndome actualizado con las nuevas tecnologías de desarrollo de software que fueron apareciendo a lo largo de los años, 
+                    como así tambén avanzando con la carrera de Analista Universitario de Sistemas en los tiempos libres que fueron quedando. 
+                    Eso llevó a que a fines de 2018 pudiera conseguir el tan ansiado título y recuperar el tiempo libre posterior a la jornada laboral 
+                    que a partir de ese momento decidí utilizarlo para meterme de lleno en la programación web</p>
             </div>
             <div class="holder960">
                 <div class="inner-title">
@@ -33,39 +35,32 @@ const About = () => {
                 </div>
                 <div class="skills-info">
                     <div class="divider"><span><i class="icon-star-filled"></i></span></div>
-                    <div class="inner-title">
+                    {/* <div class="inner-title">
                         <h2> Principales Habilidades como Desarrollador Web</h2>
                         <p>"La experiencia es un grado." ...desde 2005</p>
-                    </div>
+                    </div> */}
                     <div class="skillsHolder top">
-                        <div class="skills hard">
-                            <h3>Hard Skills</h3>
-                            <ul id="hard-skills">
-                                <li>Habilidad 1</li>
-                                <li>Habilidad 2</li>
-                                <li>Habilidad 3</li>
-                                <li>Habilidad 4</li>
-                                <li>Habilidad 5</li>
-                            </ul>
-                        </div>
                         <div class="skills soft">
                             <h3>Soft Skills</h3>
                             <ul id="soft-skills">
-                                <li>Habilidad 1</li>
-                                <li>Habilidad 2</li>
-                                <li>Habilidad 3</li>
-                                <li>Habilidad 4</li>
-                                <li>Habilidad 5</li>
+                                <li>Ética de trabajo</li>
+                                <li>Adaptabilidad</li>
+                                <li>Capacidad analítica</li>
+                                <li>Trabajo en equipo</li>
+                                <li>Pensamiento crítico</li>
+                                <li>Autonomía</li>
+                                <li>Atención al detalle</li>
+                                <li>Resilencia</li>
                             </ul>
                         </div>
                         <div class="skills more-of-me">
-                            <h3>Un poco más sobre mí</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolore quaerat
-                                cupiditate sed tempore vel porro. Totam labore enim explicabo ullam optio porro quas
-                                neque adipisci inventore officia, blanditiis est. Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Praesentium voluptas libero consequatur, cumque sint dolorem ipsam id
-                                quasi, expedita placeat debitis. Sequi quidem rerum magnam possimus delectus! Facilis,
-                                nobis possimus!</p>
+                            <h3>Un poco sobre mí</h3>
+                            <p>Empecé a trabajar en el año 2000 en una empresa de desarrollo de software, cuando ya llevaba 5 años formándome en el ámbito académico,
+                                y desde ese momento todo fue aprendizaje, evolución y capacitación para estar al día con las nuevas tecnologías de diseño y desarrollo de software.
+                                El paso por diferentes empresas y trabajar para clientes de distintos rubros me dio no sólo un amplio conocimiento de diferentes negocios
+                                sino también me posibilitó desarrollar la capacidad de adaptarme a las nuevas realidades para dar lo mejor de mí en cada momento.
+                                Algunos de los sistemas en los que participé fueron de gestión contable, de empresas y comercios en general, de trading algorítmico,
+                                mutual de salud y broker de seguros.</p>
                         </div>
                     </div>
                 </div>
@@ -76,21 +71,22 @@ const About = () => {
                         <p>Diferentes maneras de contactar conmigo para trabajar juntos.</p>
                     </div>
                     <div class="infoHolder top">
-                        <div class="address"><i class="icon-location"></i>
+                        <div class="address">
+                            <i class="fas fa-map-marker-alt"></i>
                             <p>Rosario (Argentina)</p>
                         </div>
                         <div class="info">
                             <ul>
                                 <li>
-                                    <div class="ico"><i class="icon-mail"></i></div>
+                                    <div class="ico"><i class="far fa-envelope"></i></div>
                                     <p>Email : pablosanmiguel.psm@gmail.com </p>
                                 </li>
                                 <li>
-                                    <div class="ico"><i class="icon-phone"></i></div>
+                                    <div class="ico"><i class="fas fa-mobile-alt"></i></div>
                                     <p>Tel : (+ 54) 9 341 6137190</p>
                                 </li>
                                 <li>
-                                    <div class="ico"><i class="icon-link"></i></div>
+                                    <div class="ico"><i class="fas fa-link"></i></div>
                                     <p>Web : <a href="http://www.pablosanmiguel.com.ar">pablosanmiguel.com.ar</a>
                                     </p>
                                 </li>

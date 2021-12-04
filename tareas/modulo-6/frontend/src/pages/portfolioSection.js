@@ -18,7 +18,7 @@ const Portfolio = (props) => {
     return (
         <section id="portfolio">
             <div class="section-title">
-                <h2>Portfolio Programador Web Full Stack</h2>
+                <h2><i class="icon-portfolio"></i> / Portfolio Programador Web Full Stack</h2>
                 <p>Algunos ejemplos de trabajos realizados.</p>
             </div>
             <div class="inner-title">
