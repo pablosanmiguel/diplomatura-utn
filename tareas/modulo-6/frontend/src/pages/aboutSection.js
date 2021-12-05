@@ -35,10 +35,6 @@ const About = () => {
                 </div>
                 <div class="skills-info">
                     <div class="divider"><span><i class="icon-star-filled"></i></span></div>
-                    {/* <div class="inner-title">
-                        <h2> Principales Habilidades como Desarrollador Web</h2>
-                        <p>"La experiencia es un grado." ...desde 2005</p>
-                    </div> */}
                     <div class="skillsHolder top">
                         <div class="skills soft">
                             <h3>Soft Skills</h3>
