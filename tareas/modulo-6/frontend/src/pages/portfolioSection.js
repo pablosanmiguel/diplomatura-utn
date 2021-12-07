@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import NovedadItem from '../components/novedades/NovedadItem';
+import ProyectoItem from '../components/proyectos/ProyectoItem';
 
 const Portfolio = (props) => {
     const [loading, setLoading] = useState(false);
-    const [novedades, setNovedades] = useState([]);
+    const [proyectos, setProyectos] = useState([]);
     useEffect(() => {
-        const cargarNovedades = async () => {
+        const cargarProyectos = async () => {
             setLoading(true);
-            const response = await axios.get('http://localhost:3000/api/novedades');
-            setNovedades(response.data);
+            const response = await axios.get('http://localhost:3000/api/proyectos');
+            setProyectos(response.data);
             setLoading(false);
         };
-        cargarNovedades();
+        cargarProyectos();
     }, []);
 
     return (
@@ -28,7 +28,7 @@ const Portfolio = (props) => {
                 {loading ? (
                     <p>Cargando...</p>
                 ) : (
-                    novedades.map(item => <NovedadItem key={item.id} title={item.titulo} subtitle={item.subtitulo} image={item.imagen} body={item.cuerpo} />)
+                    proyectos.map(item => <ProyectoItem key={item.id} page={item.pagina} web_address={item.direccion_web} image={item.imagen} detail={item.detalle} />)
                 )}
             </div>
         </section>
