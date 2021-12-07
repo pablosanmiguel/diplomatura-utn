@@ -8,7 +8,7 @@ $(function () {
     $('.scroll').click(function () {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top - 69
-        }, 500);
+        }, 300);
         return false;
     });
 });

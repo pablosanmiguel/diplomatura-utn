@@ -33,38 +33,36 @@ const Contact = (props) => {
         <section id="contact">
             <div class="section-title">
                 <h2><i class="icon-contact"></i> / Contacto, información, presupuestos</h2>
-                <p>Por cualquier consulta o solicitud de presupuesto, contactate conmigo</p>
+                <p>Si querés pedir un presupuesto personalizado o realizar cualquier consulta te podés contactar conmigo
+                    llenando el formulario que aparece abajo, e intentaré responder lo antes posible.</p>
             </div>
             <div class="inner-title">
-                <h2>Pablo San Miguel - Analista Universitario de Sistemas</h2>
-                <p>Más de 20 años de experiencia en desarrollo de aplicaciones de escritorio e incursionando en el mundo
-                    de la programación web.</p>
+                <h3>Completá tus datos</h3>
             </div>
-            <div className="holder">
-                <div className="columna left">
-                    <h2>Complete el siguiente formulario</h2>
-                    <form action="/contacto" method="post" className="formulario" onSubmit={handleSubmit} >
-                        <p>
-                            <label>Nombre</label>
-                            <input type="text" name="nombre" value={formData.nombre} onChange={handleChange} />
-                        </p>
-                        <p>
-                            <label>Email</label>
-                            <input type="text" name="email" value={formData.email} onChange={handleChange} />
-                        </p>
-                        <p>
-                            <label>Teléfono</label>
-                            <input type="text" name="telefono" value={formData.telefono} onChange={handleChange} />
-                        </p>
-                        <p>
-                            <label>Comentario</label>
-                            <textarea name="mensaje" value={formData.mensaje} onChange={handleChange} />
-                        </p>
-                        <p className="centrar"><input type="submit" value="Enviar" /></p>
-                        {sending ? <p>Enviando...</p> : null}
-                        {msg ? <p>{msg}</p> : null}
-                    </form>
-                </div>
+            <div className="contact-form holder960">
+                <form action="/contacto" method="post" className="formulario" onSubmit={handleSubmit} >
+                    <div class="name">
+                        <label for="nombre"></label>
+                        <input type="text" placeholder="Nombre y Apellido" name="nombre" value={formData.nombre} onChange={handleChange} required autoComplete="off" />
+                    </div>
+                    <div class="telephone">
+                        <label for="telefono"></label>
+                        <input type="text" placeholder="Teléfono" name="telefono" value={formData.telefono} onChange={handleChange} required autoComplete="off" />
+                    </div>
+                    <div class="email">
+                        <label for="email"></label>
+                        <input type="email" placeholder="E-Mail" name="email" value={formData.email} onChange={handleChange} required autoComplete="off" />
+                    </div>
+                    <div class="message">
+                        <label for="mensaje"></label>
+                        <textarea name="mensaje" placeholder="Comentario" value={formData.mensaje} onChange={handleChange} cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Enviar" id="contact-send" />
+                    </div>
+                    {sending ? <p>Enviando...</p> : null}
+                    {msg ? <p>{msg}</p> : null}
+                </form>
             </div>
         </section>
     );

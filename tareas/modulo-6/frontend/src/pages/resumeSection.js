@@ -126,9 +126,11 @@ const Resume = () => {
                             <h4>07/12/2021</h4>
                         </div>
                         <div class="resume-item-text">
-                            <p>Capacitación impartida por NIC Argentina respecto de considerando a la hora de diseñar una página web para que cumpla
-                                con los estándares de Accesibilidad Web. Más información en el siguiente
-                                <a href='https://sceu.frba.utn.edu.ar/e-learning/detalle/diplomatura/1969/diplomatura-en-programacion-web-full-stack-con-react-js'> enlace.</a>
+                            <p>Diplomatura impartida por el sitio de e-learning de la Universidad Tecnológica Nacional, Facultad Regional de Buenos Aires (UTN-FRBA)
+                                de 24 semanas de duración, donde entre otros contenidos se aprender a desarrollar y desplegar un servidor NodeJS y un cliente React JS
+                                que se conecte con dicho servidor
+                                <a href='https://sceu.frba.utn.edu.ar/e-learning/detalle/diplomatura/1969/diplomatura-en-programacion-web-full-stack-con-react-js'
+                                    target="_blank" rel="noreferrer" > enlace.</a>
                             </p>
                         </div>
                     </div>
@@ -138,9 +140,10 @@ const Resume = () => {
                             <h4>27/10/2021</h4>
                         </div>
                         <div class="resume-item-text">
-                            <p>Capacitación impartida por NIC Argentina respecto de considerando a la hora de diseñar una página web para que cumpla
-                                con los estándares de Accesibilidad Web. Más información en el siguiente
-                                <a href='https://nic.ar/index.php/es/novedades/noticias/comenzaron-las-capacitaciones-en-accesibilidad-web'> enlace.</a>
+                            <p>Capacitación impartida por NIC Argentina respecto de los considerandos a tener en cuenta a la hora
+                                de diseñar una página web para que cumpla con los estándares de Accesibilidad Web. Más información en el siguiente
+                                <a href='https://nic.ar/index.php/es/novedades/noticias/comenzaron-las-capacitaciones-en-accesibilidad-web'
+                                    target="_blank" rel="noreferrer" > enlace.</a>
                             </p>
                         </div>
                     </div>
@@ -150,8 +153,8 @@ const Resume = () => {
                             <h4>2020</h4>
                         </div>
                         <div class="resume-item-text">
-                            <p>Curso online para aprender Diseño web desde cero, incluyendo conceptos de diseñor responsieve, SEO, animaciones en CSS, entre otras cosas.
-                                Para más detalles del curso, ver el siguiente
+                            <p>Curso online para aprender Diseño web desde cero, incluyendo conceptos de diseño responsive, posicionamientoSEO,
+                                animaciones en CSS, entre otras cosas. Para más detalles del curso, ver el siguiente
                                 <a href='https://www.udemy.com/share/101Xg03@GX1PVLdaK_M0gPdrujwU4YqTJqDl1NmQzcofJOKjQ9Feu7p-IjuEXo2F91L9_CQP/'> enlace.</a>
                             </p>
                         </div>
