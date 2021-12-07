@@ -8,10 +8,10 @@
     {{!-- fila-2 --}}
     <div class="row">
         <div class="col-7">
-            <h3>Listado de novedades</h3>
+            <h3>Listado de proyectos</h3>
         </div>
         <div class="col-5 text-end">
-            <a class="btn btn-success" href="/admin/novedades/agregar">
+            <a class="btn btn-success" href="/admin/proyectos/agregar">
                 <i class="fa fa-plus" aria-hidden="true"></i>
                 Nuevo</a>
         </div>
@@ -22,21 +22,21 @@
             <thead>
                 <tr class="table-dark">
                     <th scope="col">#</th>
-                    <th scope="col">Título</th>
+                    <th scope="col">Página</th>
                     <th scope="col">Imagen</th>
                     <th class="text-end">Acciones</th>
                 </tr>
             </thead>
             <tbody>
-                {{#each novedades}}
+                {{#each proyectos}}
                 <tr class="table-dark">
                     <th scope="row">{{id}}</th>
-                    <td>{{titulo}}</th>
+                    <td>{{pagina}}</th>
                     <td>{{{imagen}}}</th>
                     <td class="text-end">
-                        <a class="btn btn-secondary" href="/admin/novedades/modificar/{{id}}">
+                        <a class="btn btn-secondary" href="/admin/proyectos/modificar/{{id}}">
                             <i class="fas fa-pencil-alt"></i> </a>
-                        <a class="btn btn-secondary" href="/admin/novedades/eliminar/{{id}}">
+                        <a class="btn btn-secondary" href="/admin/proyectos/eliminar/{{id}}">
                             <i class="fa fa-trash" aria-hidden="true"></i>
                         </a>
                     </td>

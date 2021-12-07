@@ -1,19 +1,19 @@
 <div class="container" style="margin:100px auto">
     <div class="row">
         <div class="col-6 offset-3">
-            <h4>Agregar una nueva novedad</h4>
-            <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data">
+            <h4>Agregar un nuevo proyecto</h4>
+            <form action="/admin/proyectos/agregar" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Título" name="titulo">
+                    <input type="text" class="form-control" placeholder="Página" name="pagina">
                 </div>
                 <div class="form-group">
-                    <textarea type="text" class="form-control" placeholder="Subtítulo" name="subtitulo"></textarea>
+                    <input type="text" class="form-control" placeholder="Dirección Web" name="direccion_web"></textarea>
                 </div>
                 <div class="form-group">
                     <label>Imagen: <input type="file" name="imagen" id="imagen" /></label>
                 </div>
                 <div class="form-group">
-                    <textarea type="text" class="form-control" placeholder="Cuerpo" name="cuerpo"></textarea>
+                    <textarea type="text" class="form-control" placeholder="Detalle" name="detalle"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
             </form>

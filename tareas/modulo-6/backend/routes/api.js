@@ -1,30 +1,30 @@
 var express = require('express');
 var router = express.Router();
-var novedadesModel = require('./../models/novedadesModel');
+var proyectosModel = require('./../models/proyectosModel');
 var cloudinary = require('cloudinary').v2;
 var nodemailer = require('nodemailer');
 
-router.get('/novedades', async function (req, res, next) {
-    let novedades = await novedadesModel.getNovedades();
-    novedades = novedades.map(novedades => {
-        if (novedades.img_id) {
-            const imagen = cloudinary.url(novedades.img_id, {
+router.get('/proyectos', async function (req, res, next) {
+    let proyectos = await proyectosModel.getProyectos();
+    proyectos = proyectos.map(proyectos => {
+        if (proyectos.img_id) {
+            const imagen = cloudinary.url(proyectos.img_id, {
                 width: 480,
                 height: 270,
                 crop: 'fill'
             });
             return {
-                ...novedades,
+                ...proyectos,
                 imagen
             }
         } else {
             return {
-                ...novedades,
+                ...proyectos,
                 imagen: ''
             }
         }
     });
-    res.json(novedades);
+    res.json(proyectos);
 });
 
 router.post('/contacto', async (req, res) => {

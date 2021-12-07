@@ -1,8 +1,8 @@
 var pool = require('./bd');
 
-async function getNovedades() {
+async function getProyectos() {
     try {
-        var query = 'select * from novedades'
+        var query = 'select * from proyectos'
         var rows = await pool.query(query);
         return rows;
     } catch (error) {
@@ -10,9 +10,9 @@ async function getNovedades() {
     }
 }
 
-async function insertNovedad(obj) {
+async function insertProyecto(obj) {
     try {
-        var query = "insert into novedades set ?"
+        var query = "insert into proyectos set ?"
         var rows = await pool.query(query, [obj]);
         return rows;
     } catch (error) {
@@ -21,22 +21,22 @@ async function insertNovedad(obj) {
     }
 }
 
-async function deleteNovedadesById(id){
-    var query = 'delete from novedades where id = ?';
+async function deleteProyectosById(id) {
+    var query = 'delete from proyectos where id = ?';
     var rows = await pool.query(query, [id]);
     return rows;
 }
 
 
-async function getNovedadesById(id){
-    var query = 'select * from novedades where id = ?';
+async function getProyectosById(id) {
+    var query = 'select * from proyectos where id = ?';
     var rows = await pool.query(query, [id]);
     return rows[0];
 }
 
-async function modificarNovedadById(obj, id) {
+async function modificarProyectoById(obj, id) {
     try {
-        var query = "update novedades set ? where id = ?"
+        var query = "update proyectos set ? where id = ?"
         var rows = await pool.query(query, [obj, id]);
         return rows;
     } catch (error) {
@@ -45,4 +45,4 @@ async function modificarNovedadById(obj, id) {
     }
 }
 
-module.exports = { getNovedades, insertNovedad, deleteNovedadesById, getNovedadesById, modificarNovedadById }
+module.exports = { getProyectos, insertProyecto, deleteProyectosById, getProyectosById, modificarProyectoById }
