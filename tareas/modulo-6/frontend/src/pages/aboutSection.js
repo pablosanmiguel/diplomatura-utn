@@ -8,9 +8,8 @@ const About = () => {
                     he realizado tareas de programación, análisis de requerimientos, maquetación de formularios, diseño de bases de datos y todo tipo de 
                     tareas relacionadas en la construcción de un sistema de computación de escritorio. En paralelo a la experiencia laboral también fui 
                     manteniéndome actualizado con las nuevas tecnologías de desarrollo de software que fueron apareciendo a lo largo de los años, 
-                    como así tambén avanzando con la carrera de Analista Universitario de Sistemas en los tiempos libres que fueron quedando. 
-                    Eso llevó a que a fines de 2018 pudiera conseguir el tan ansiado título y recuperar el tiempo libre posterior a la jornada laboral 
-                    que a partir de ese momento decidí utilizarlo para meterme de lleno en la programación web</p>
+                    mientras avanzaba con la carrera de Analista Universitario de Sistemas. A fines de 2018 conseguí el tan ansiado título y 
+                    a partir de ese momento utilizo el tiempo libre para capacitarme en programación web.</p>
             </div>
             <div class="holder960">
                 <div class="inner-title">

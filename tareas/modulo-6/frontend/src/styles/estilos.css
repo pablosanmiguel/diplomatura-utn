@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
 
@@ -140,20 +141,34 @@ section {
 }
 
 .section-title {
-    color     : whitesmoke;
-    padding   : 20px 0;
-    text-align: center;
+    color      : whitesmoke;
+    padding    : 10px 0 20px;
+    text-align : center;
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+    text-shadow: #000 2px 0px 0px, #000 1.75517px 0.958851px 0px,
+        #000 1.0806px 1.68294px 0px, #000 0.141474px 1.99499px 0px,
+        #000 -0.832294px 1.81859px 0px, #000 -1.60229px 1.19694px 0px,
+        #000 -1.97998px 0.28224px 0px, #000 -1.87291px -0.701566px 0px,
+        #000 -1.30729px -1.5136px 0px, #000 -0.421592px -1.95506px 0px,
+        #000 0.567324px -1.91785px 0px, #000 1.41734px -1.41108px 0px,
+        #000 1.92034px -0.558831px 0px;
 }
 
 .inner-title {
     color     : #2d2d2d;
-    margin    : 40px 0px 20px 0px;
+    margin    : 30px 0px 20px 0px;
     text-align: center;
 }
 
 .section-title p {
-    margin: 0 auto;
-    width : 90vw;
+    font-family: 'Special Elite', cursive;
+    line-height: 1.1em;
+    font-size  : 20px;
+    margin     : 0 auto;
+    width      : 90vw;
+    text-shadow: none;
+    color      : #2d2d2d;
+    font-weight: 600;
 }
 
 .inner-title p {
@@ -221,24 +236,28 @@ section {
 }
 
 .icon-about::before {
-    content: '\1F44B'
+    content    : '\1F44B';
+    text-shadow: none;
 }
 
 .icon-resume::before {
-    content: '\1F4C3'
+    content    : '\1F4C3';
+    text-shadow: none;
 }
 
 .icon-portfolio::before {
-    content: '\1F4BB';
+    content    : '\1F4BB';
+    text-shadow: none;
 }
 
 .icon-contact::before {
-    content: '\1F4E7';
+    content    : '\1F4E7';
+    text-shadow: none;
 }
 
 #home {
     background-image: url(../components/layout/images/frame8.jpg);
-    height          : 79vh;
+    height          : 82vh;
 }
 
 #about {
@@ -247,7 +266,7 @@ section {
 
 #about .section-title {
     background: linear-gradient(135deg, rgba(209, 34, 41, 1) 0%, rgba(246, 138, 30, 1) 50%, rgba(253, 224, 26, 1) 100%);
-    height    : 18vh;
+    height    : 15vh;
 }
 
 #about .section-title p {
@@ -301,6 +320,10 @@ section {
 .skills li {
     list-style-type: none;
     margin-bottom  : 1em;
+}
+
+.skills li:hover {
+    font-weight: 800;
 }
 
 .more-of-me p {
@@ -432,25 +455,59 @@ section {
     height    : 10vh;
 }
 
-.portfolioHolder {
-    display        : flex;
-    align-items    : baseline;
-    justify-content: space-around;
+#portfolio .section-title p {
+    color: #e1ebee;
 }
 
 .portfolio-item {
-    width: 45%;
+    display: flex;
+    height : 310px;
+    margin : 40px auto;
+    width  : 960px;
 }
 
 .portfolio-item .imagen {
-    display: inline-block;
-    height : 200px;
-    width  : 400px;
+
+    position: relative;
+    width   : 50%;
+}
+
+.portfolio-item .texto {
+    background   : rgb(114, 160, 193);
+    box-shadow   : 0px 0px 40px 16px rgba(114, 160, 193, 0.5);
+    border       : 1px dotted #c0c0c0;
+    /* color     : #2d2d2d; */
+    position     : relative;
+    width        : 50%;
+    height       : calc(100% - 120px);
+    top          : 40px;
+}
+
+.portfolio-item .texto h3 {
+    text-align: center;
+}
+
+.portfolio-item .texto a {
+    margin-left: 10px;
+}
+
+.portfolio-item .texto p {
+    margin    : 12px;
+    text-align: justify;
+}
+
+.icon-link::before {
+    content    : '\1F30E';
+    text-shadow: none;
 }
 
 #contact .section-title {
     background: linear-gradient(135deg, rgba(0, 121, 64, 1) 0%, rgba(36, 64, 142, 1) 50%, rgba(115, 41, 130, 1)100%);
     height    : 10vh;
+}
+
+#contact .section-title p {
+    color: #e1ebee;
 }
 
 .contact-form {

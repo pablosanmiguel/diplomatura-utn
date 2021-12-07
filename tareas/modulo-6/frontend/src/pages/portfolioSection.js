@@ -22,6 +22,9 @@ const Portfolio = (props) => {
                 <p>Algunos ejemplos de trabajos realizados.</p>
             </div>
             <div className="holder1280">
+                <div class="inner-title">
+                    <h2>Acá podés ver algunos de mis trabajos realizados</h2>
+                </div>
                 {loading ? (
                     <p>Cargando...</p>
                 ) : (

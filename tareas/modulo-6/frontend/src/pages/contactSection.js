@@ -37,7 +37,7 @@ const Contact = (props) => {
                     llenando el formulario que aparece abajo, e intentaré responder lo antes posible.</p>
             </div>
             <div class="inner-title">
-                <h3>Completá tus datos</h3>
+                <h2>Completá tus datos</h2>
             </div>
             <div className="contact-form holder960">
                 <form action="/contacto" method="post" className="formulario" onSubmit={handleSubmit} >
