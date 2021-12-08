@@ -1,14 +1,17 @@
-import profilePic from '../components/layout/images/Pablo.jpg';
+import profilePic1 from '../components/layout/images/Pablo.jpg';
+import profilePic2 from '../components/layout/images/Chalten.jpg';
+import profilePic3 from '../components/layout/images/Hobby1.jpg';
+import profilePic4 from '../components/layout/images/Hobby2.jpg';
 const About = () => {
     return (
         <section id="about">
             <div class="section-title">
                 <h2><i class="icon-about"></i> / Diseño de Sistemas y de Páginas Web</h2>
-                <p>Me llamo Pablo San Miguel y vivo en Rosario (Argentina). Durante mis más de 20 años de experiencia como desarrollador de software 
-                    he realizado tareas de programación, análisis de requerimientos, maquetación de formularios, diseño de bases de datos y todo tipo de 
-                    tareas relacionadas en la construcción de un sistema de computación de escritorio. En paralelo a la experiencia laboral también fui 
-                    manteniéndome actualizado con las nuevas tecnologías de desarrollo de software que fueron apareciendo a lo largo de los años, 
-                    mientras avanzaba con la carrera de Analista Universitario de Sistemas. A fines de 2018 conseguí el tan ansiado título y 
+                <p>Me llamo Pablo San Miguel y vivo en Rosario (Argentina). Durante mis más de 20 años de experiencia como desarrollador de software
+                    he realizado tareas de programación, análisis de requerimientos, maquetación de formularios, diseño de bases de datos y todo tipo de
+                    tareas relacionadas en la construcción de un sistema de computación de escritorio. En paralelo a la experiencia laboral también fui
+                    manteniéndome actualizado con las nuevas tecnologías de desarrollo de software que fueron apareciendo a lo largo de los años,
+                    mientras avanzaba con la carrera de Analista Universitario de Sistemas. A fines de 2018 conseguí el tan ansiado título y
                     a partir de ese momento utilizo el tiempo libre para capacitarme en programación web.</p>
             </div>
             <div class="holder960">
@@ -19,17 +22,17 @@ const About = () => {
                         de la programación web.</p>
                 </div>
                 <div class="about-picture">
-                    <div class="profile-left">
-                        <div class="ico"><a target="_blank" href="files/CV-Pablo.docx"><i class="icon-download"></i></a>
-                        </div>
-                        <h3>Descargar mi CV</h3>
+                    <div class="polaroid image1" polaroid-caption="¡Hola!">
+                        <img src={profilePic1} alt="Image1" />
                     </div>
-                    <div class="profile-pic"><img src={profilePic} width="200" height="200"
-                        alt="Pablo San Miguel >Diseño de Sistemas y de Páginas Web" /></div>
-                    <div class="profile-right">
-                        <div class="ico"><a target="_blank" class="tw" href="https://twitter.com/marceygema"><i
-                            class="icon-twitter"></i></a></div>
-                        <h3>Contactame</h3>
+                    <div class="polaroid image2" polaroid-caption="#Viajar">
+                        <img src={profilePic2} alt="Image2" />
+                    </div>
+                    <div class="polaroid image3" polaroid-caption="#Hobbies">
+                        <img src={profilePic3} alt="Image3" />
+                    </div>
+                    <div class="polaroid image4" polaroid-caption="#Hobbies">
+                        <img src={profilePic4} alt="Image4" />
                     </div>
                 </div>
                 <div class="skills-info">
@@ -90,7 +93,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
 

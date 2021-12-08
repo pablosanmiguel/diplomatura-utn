@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
 
 * {
@@ -294,12 +295,72 @@ section {
 }
 
 .about-picture {
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    margin         : 40px auto;
+    position                : relative;
+    /* background-color     : lightgrey; */
+    height                  : 500px;
+    /* display              : flex;
+    align-items             : center;
+    justify-content         : center;
+    margin                  : 40px auto; */
 }
 
+.about-picture .polaroid {
+    position        : absolute;
+    border          : 1px solid darkgrey;
+    background-color: white;
+    padding         : 15px 15px 60px 15px;
+    box-shadow      : 5px 10px 10px darkgrey;
+}
+
+.about-picture .polaroid:after {
+    content    : attr(polaroid-caption);
+    position   : absolute;
+    bottom     : 0px;
+    left       : 0px;
+    width      : calc(100% - 20px);
+    padding    : 10px;
+    font-size  : 30px;
+    text-align : center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.about-picture .image1 {
+    left             : 80px;
+    top              : 100px;
+    transform        : rotate(-20deg);
+    -ms-transform    : rotate(-20deg);
+    -o-transform     : rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+}
+
+.about-picture .image2 {
+    left             : 300px;
+    top              : 150px;
+    transform        : rotate(10deg);
+    -ms-transform    : rotate(10deg);
+    -o-transform     : rotate(10deg);
+    -webkit-transform: rotate(10deg);
+}
+
+.about-picture .image3 {
+    left             : 500px;
+    top              : 50px;
+    transform        : rotate(-5deg);
+    -ms-transform    : rotate(-5deg);
+    -o-transform     : rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+}
+
+.about-picture .image4 {
+    left             : 700px;
+    top              : 125px;
+    transform        : rotate(5deg);
+    -ms-transform    : rotate(5deg);
+    -o-transform     : rotate(5deg);
+    -webkit-transform: rotate(5deg);
+}
+
+/* 
 .profile-left,
 .profile-right {
     margin   : 0 20px;
@@ -326,7 +387,7 @@ section {
     display      : inline-block;
     border       : none;
     border-radius: 100%;
-}
+} */
 
 .skillsHolder {
     display        : flex;
